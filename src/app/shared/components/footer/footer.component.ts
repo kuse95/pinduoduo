@@ -40,7 +40,7 @@ export class FooterComponent implements OnInit {
       imageSelected:
         'http://t00img.yangkeduo.com/goods/images/2018-12-16/027faacb0dadbab87e906a6cae949c10.png',
       title: '分类',
-      link: '/product',
+      link: '/category',
     },
     {
       group: 4,
