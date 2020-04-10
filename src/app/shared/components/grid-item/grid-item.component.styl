@@ -1,0 +1,14 @@
+.item
+  display: grid
+  grid-template-areas: 'image' 'title'
+  grid-auto-flow: column
+  place-items: center
+  width: 4rem
+.item >>> [grid-item-image]
+  grid-area: image
+  max-width: 100%
+  height: auto
+  object-fit: cover
+.item >>> [grid-item-title]
+  grid-area: title
+  margin: 0

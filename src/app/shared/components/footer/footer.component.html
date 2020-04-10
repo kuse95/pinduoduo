@@ -1,0 +1,8 @@
+<app-horizontal-grid [cols]="tabList.length" [displayCols]="tabList.length">
+  <app-grid-item [ngClass]="{'selected': selected === idx}" *ngFor="let item of tabList;index as idx"
+    (click)="onSelectedItem(item, idx)">
+    <img grid-item-image *ngIf="selected === idx" [src]="item.imageSelected" [alt]="item.title">
+    <img grid-item-image *ngIf="selected !== idx" [src]="item.image" [alt]="item.title">
+    <p grid-item-title>{{item.title}}</p>
+  </app-grid-item>
+</app-horizontal-grid>
