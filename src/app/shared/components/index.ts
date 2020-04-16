@@ -5,3 +5,4 @@ export * from './footer';
 export * from './search-bar';
 export * from './icon';
 export * from './tabs';
+export * from './tab-pane';

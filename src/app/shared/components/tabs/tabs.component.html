@@ -1,3 +1,9 @@
-<p>
-  tabs works!
-</p>
+<div class="tabs__header">
+  <ul class="tans__nav">
+    <li class="tan-bar" *ngFor="let item of panes;">{{item.label}}</li>
+  </ul>
+  <div class="underline"></div>
+</div>
+<div class="tabs__content">
+  <ng-content select="app-tab-pane"></ng-content>
+</div>

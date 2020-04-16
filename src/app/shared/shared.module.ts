@@ -8,7 +8,8 @@ import {
   SearchBarComponent,
   HeaderContainerComponent,
   IconComponent,
-  TabsComponent
+  TabsComponent,
+  TabPaneComponent
 } from './components';
 
 @NgModule({
@@ -19,7 +20,8 @@ import {
     SearchBarComponent,
     HeaderContainerComponent,
     IconComponent,
-    TabsComponent
+    TabsComponent,
+    TabPaneComponent
   ],
   imports: [CommonModule, FormsModule],
   exports: [
@@ -31,7 +33,8 @@ import {
     SearchBarComponent,
     HeaderContainerComponent,
     IconComponent,
-    TabsComponent
+    TabsComponent,
+    TabPaneComponent
   ],
 })
 export class SharedModule {}

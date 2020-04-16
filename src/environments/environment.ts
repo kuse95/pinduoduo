@@ -3,7 +3,8 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  baseUrl: 'https://www.easy-mock.com/mock/5e98210a3c3c6e2c478c3e31/pinduoduo'
 };
 
 /*

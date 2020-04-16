@@ -2,6 +2,9 @@
   <app-search-bar></app-search-bar>
 </app-header-container>
 <div class="main">
-  <app-tabs></app-tabs>
-  <!-- <router-outlet></router-outlet> -->
+  <app-tabs>
+    <app-tab-pane *ngFor="let item of tabs; trackBy:tabTrackFunc" [label]="item.label" [name]="item.type">
+      {{item.label + item.type}}
+    </app-tab-pane>
+  </app-tabs>
 </div>
