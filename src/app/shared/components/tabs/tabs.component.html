@@ -1,6 +1,8 @@
 <div class="tabs__header">
-  <ul class="tans__nav">
-    <li class="tan-bar" *ngFor="let item of panes;">{{item.label}}</li>
+  <ul class="tabs__nav">
+    <li #tabBar class="tab-bar" [ngClass]="{'tab-bar--isSelected': activeName === item.name}"
+      *ngFor="let item of panes;index as idx" (click)="onSelect(item,idx)">
+      {{item.label}}</li>
   </ul>
   <div class="underline"></div>
 </div>

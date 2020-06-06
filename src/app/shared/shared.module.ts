@@ -9,7 +9,7 @@ import {
   HeaderContainerComponent,
   IconComponent,
   TabsComponent,
-  TabPaneComponent
+  TabPaneComponent,
 } from './components';
 
 @NgModule({
@@ -21,7 +21,7 @@ import {
     HeaderContainerComponent,
     IconComponent,
     TabsComponent,
-    TabPaneComponent
+    TabPaneComponent,
   ],
   imports: [CommonModule, FormsModule],
   exports: [
@@ -34,7 +34,7 @@ import {
     HeaderContainerComponent,
     IconComponent,
     TabsComponent,
-    TabPaneComponent
+    TabPaneComponent,
   ],
 })
 export class SharedModule {}

@@ -2,18 +2,26 @@ ul
   list-style: none
   padding-left: 0
 .tabs__header
+  overflow: hidden
+  position: relative
+.tabs__nav
+  display: flex
+  flex-wrap: nowrap
+  font-size: 14px
+  margin: 0
   overflow-x: auto
   scroll-behavior: smooth
   -webkit-overflow-scrolling: touch
   &::-webkit-scrollbar
     display: none !important
-.tans__nav
-  display: flex
-  flex-wrap: nowrap
-  font-size: 14px
-  margin: 0
-  .tan-bar
+  .tab-bar
     min-width: 28px
-    margin: 10px
-  .tan-bar--isSelected
+    padding: 10px
+  .tab-bar--isSelected
     color: #e02e24
+.underline
+  position: absolute
+  height: 2px
+  width: 10px
+  background-color: #e02e24
+  bottom: 0

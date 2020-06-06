@@ -2,9 +2,9 @@
   <app-search-bar></app-search-bar>
 </app-header-container>
 <div class="main">
-  <app-tabs>
-    <app-tab-pane *ngFor="let item of tabs; trackBy:tabTrackFunc" [label]="item.label" [name]="item.type">
-      {{item.label + item.type}}
+  <app-tabs [(activeName)]="currentTab">
+    <app-tab-pane *ngFor="let item of tabs$ | async; trackBy:tabTrackFunc" [label]="item.label" [name]="item.id">
+      {{item.label + item.id}}
     </app-tab-pane>
   </app-tabs>
 </div>

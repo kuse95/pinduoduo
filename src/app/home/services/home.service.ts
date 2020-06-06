@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { environment } from 'src/environments/environment';
-import { HomeTabsResponse } from '../interface';
+import { TabsResponse } from '../interface';
+import { pluck } from 'rxjs/operators';
 
 @Injectable({
   providedIn: 'root',
@@ -10,6 +10,8 @@ export class HomeService {
   constructor(private http: HttpClient) {}
 
   getTabs() {
-    return this.http.get<HomeTabsResponse>(`${environment.baseUrl}/tabs`);
+    return this.http
+      .get<TabsResponse>('/tabs')
+      .pipe(pluck('data'), pluck('list'));
   }
 }
